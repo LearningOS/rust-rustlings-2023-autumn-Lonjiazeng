@@ -4,7 +4,9 @@
 #[allow(unused_variables, unused_assignments)]
 fn main() {
     let my_option: Option<()> = None;
-    if my_option.is_none() {}
+    if my_option.is_none() {
+        println!("What's in my_option is: {:#?}", my_option);
+    }
 
     let my_arr = &[-1, -2, -3 - 4, -5, -6];
     println!("My array! Here it is: {:?}", my_arr);
